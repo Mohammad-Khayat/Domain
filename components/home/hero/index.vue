@@ -34,18 +34,15 @@
           <home-hero-svg></home-hero-svg>
         </div>
         <div class="flex flex-col md:order-1 md:justify-center text-center md:text-left">
-          <h1 class="text-white text-5xl my-2">Great Thigs Start With Greate Domain</h1>
+          <h1 class="text-white text-2xl md:text-5xl my-2">
+            Great Thigs Start With Greate Domain
+          </h1>
           <p class="text-light">
             You'll Also Get Free Email Forwarding, DNS Management, Transfer Lock, Free SSL
             & More! It All Starts With A Great Domain. Stand Out With A Domain Name That's
             Perfectly You.
           </p>
-          <button
-            class="bg-blue-light flex items-center text-white my-1 rounded-lg w-max p-2"
-          >
-            Find Your Domain
-            <unicon name="search" class="mx-1" fill="#fff"></unicon>
-          </button>
+          <ui-button icon="search"> Find Your Domain </ui-button>
         </div>
       </div>
     </div>
