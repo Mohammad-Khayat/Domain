@@ -6,7 +6,7 @@
     </div>
     <div class="trending-domains">
       <div class="container m-auto">
-        <div class="grid grid-cols-4 gap-4 mt-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
           <div class="col">
             <domain-card></domain-card>
           </div>
