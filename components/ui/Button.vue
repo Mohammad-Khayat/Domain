@@ -1,6 +1,6 @@
 <template>
   <button
-    class="bg-blue-light flex items-center text-white my-1 rounded-lg w-max p-2 m-auto focus:shadow-lg"
+    class="bg-blue-light flex items-center text-white my-1 rounded-lg w-max p-2 focus:shadow-lg"
   >
     <slot> Find Your Domain </slot>
     <slot name="icon">

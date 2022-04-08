@@ -1,10 +1,13 @@
 <template>
-  <nav class="fixed w-full border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800">
+  <nav
+    :class="{ 'active bg-blue-dark bg-opacity-80 backdrop-blur-lg': !!navbarStatus }"
+    class="transition-all fixed w-full border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800"
+  >
     <div class="container flex flex-wrap justify-between items-center mx-auto">
       <a href="https://flowbite.com" class="flex items-center">
         <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
           <svg
-            class="w-40"
+            class="w-32"
             viewBox="0 0 508 201"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -165,15 +168,22 @@
 </template>
 
 <script>
-export default {};
+import { mapMutations, mapState } from "vuex";
+export default {
+  methods: {
+    ...mapMutations({ Set_Navbar_Status: "app/Set_Navbar_Status" }),
+  },
+  computed: {
+    ...mapState({ navbarStatus: (state) => state.app.navbarStatus }),
+  },
+  mounted() {
+    addEventListener("scroll", this.Set_Navbar_Status);
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-.nav-links {
-  li {
-    a {
-      // color: #fff;
-    }
-  }
+nav.active {
+  backdrop-filter: blur(5px);
 }
 </style>

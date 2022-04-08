@@ -18,7 +18,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["@/assets/tailwind.css"],
+  css: ["@/assets/tailwind.css", "@/assets/utility.scss"],
 
   plugins: [{ src: "~/plugins/vue-unicons", mode: "client" }],
   // Auto import components: https://go.nuxtjs.dev/config-components

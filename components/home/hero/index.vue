@@ -1,5 +1,5 @@
 <template>
-  <section class="main-hero pt-20">
+  <section class="main-hero pt-20 overflow-hidden">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       version="1.1"
@@ -42,7 +42,9 @@
             & More! It All Starts With A Great Domain. Stand Out With A Domain Name That's
             Perfectly You.
           </p>
-          <ui-button icon="search"> Find Your Domain </ui-button>
+          <ui-button icon="search" class="m-auto md:my-5 md:mx-0">
+            Find Your Domain
+          </ui-button>
         </div>
       </div>
     </div>

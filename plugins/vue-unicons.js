@@ -5,7 +5,16 @@ import {
   uniCarWash,
   uniSearch,
   uniSearchAlt,
+  uniShoppingCart,
+  uniShoppingCartAlt,
 } from "vue-unicons/dist/icons";
 
-Unicon.add([uniLayerGroupMonochrome, uniCarWash, uniSearch, uniSearchAlt]);
+Unicon.add([
+  uniLayerGroupMonochrome,
+  uniCarWash,
+  uniSearch,
+  uniSearchAlt,
+  uniShoppingCart,
+  uniShoppingCartAlt,
+]);
 Vue.use(Unicon);
