@@ -7,7 +7,7 @@
     <div class="trending-domains">
       <div class="container m-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
-          <div class="col px-2" v-for="item in 4" :key="item">
+          <div class="col px-2 md:px-0" v-for="item in 4" :key="item">
             <domain-card></domain-card>
           </div>
         </div>

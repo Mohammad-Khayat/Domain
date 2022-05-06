@@ -18,9 +18,16 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["@/assets/tailwind.css", "@/assets/utility.scss"],
+  css: [
+    "@/assets/scss/tailwind.scss",
+    "@/assets/scss/utility.scss",
+    "@fortawesome/fontawesome-svg-core/styles.css",
+  ],
 
-  plugins: [{ src: "~/plugins/vue-unicons", mode: "client" }],
+  plugins: [
+    { src: "~/plugins/vue-unicons", mode: "client" },
+    { src: "~/plugins/fontawesome.js" },
+  ],
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
