@@ -7,11 +7,7 @@
 </template>
 
 <script>
-import IdomainFooter from "~/components/IdomainFooter.vue";
-import Navbar from "~/components/Navbar.vue";
-export default {
-  components: { Navbar },
-};
+export default {};
 </script>
 
 <style></style>
